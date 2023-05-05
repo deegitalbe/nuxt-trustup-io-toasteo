@@ -1,8 +1,8 @@
 {
-  "name": "{ORGANIZATION_NAME}/{MODULE_NAME}",
+  "name": "@deegital/nuxt-trustup-io-toasteo",
   "version": "0.0.1",
-  "description": "{MODULE_DESCRIPTION}",
-  "repository": "{REPOSITORY_URL}",
+  "description": "Our notification package for nuxt.",
+  "repository": "git@github.com:deegitalbe/nuxt-trustup-io-toasteo.git",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -31,9 +31,10 @@
     "dev:prepare": "nuxt-module-build --stub && yarn generate",
     "version": "yarn format && git add -A src",
     "postversion": "npm publish",
-    "postpublish": "git push && git push --tags",
+    "postpublish": "git push && git push --tags"
   },
   "dependencies": {
+    "@deegital/vue-trustup-io-toasteo": "^1.1.9",
     "@nuxt/kit": "^3.4.2"
   },
   "devDependencies": {

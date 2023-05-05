@@ -3,7 +3,7 @@ dotenv.config();
 
 export default defineNuxtConfig({
   modules: ["../src/module"],
-  {MODULE_CONFIG_KEY}: {},
+  trustupIoToasteo: {},
   postcss: {
     plugins: {
       tailwindcss: {},

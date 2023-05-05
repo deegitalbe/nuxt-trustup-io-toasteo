@@ -16,20 +16,31 @@
         >
           <div>
             <div class="text-[300px]">🎉</div>
-            <div class="text-2xl text-gray-600 font-thin">
+            <div
+              class="text-2xl text-gray-600 font-thin"
+              @click="
+                toasteo.success({
+                  title: 'hello',
+                  text: 'kqlsklqdslkqdskkslq',
+                  timer: 100000,
+                })
+              "
+            >
               Let's build something amazing !
             </div>
           </div>
         </div>
       </div>
     </Transition>
+    <TrustupIoToasteo :toasteo="toasteo"></TrustupIoToasteo>
   </div>
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from "#imports";
+import { onMounted, ref, useToasteo } from "#imports";
 
 const isReady = ref<boolean>(false);
 
-onMounted(() => isReady.value = true);
+const toasteo = useToasteo();
+onMounted(() => (isReady.value = true));
 </script>
