@@ -1,5 +1,11 @@
 # @deegital/nuxt-trustup-io-toasteo
 
+## 0.0.4
+
+### Patch Changes
+
+- 13fc055: Unshift styme
+
 ## 0.0.3
 
 ### Patch Changes
