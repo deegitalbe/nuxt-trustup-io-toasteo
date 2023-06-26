@@ -28,6 +28,6 @@ export default defineNuxtModule<ModuleOptions>({
       from: "@deegital/vue-trustup-io-toasteo",
     });
 
-    nuxt.options.css.push("@deegital/vue-trustup-io-toasteo/dist/style.css");
+    nuxt.options.css.unshift("@deegital/vue-trustup-io-toasteo/dist/style.css");
   },
 });
