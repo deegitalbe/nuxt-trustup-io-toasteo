@@ -1,5 +1,11 @@
 # @deegital/nuxt-trustup-io-toasteo
 
+## 0.0.5
+
+### Patch Changes
+
+- 590dfb9: Fix css , import manually
+
 ## 0.0.4
 
 ### Patch Changes
