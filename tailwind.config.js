@@ -8,6 +8,7 @@ export default {
     "./playground/nuxt.config.{js,ts}",
     "./playground/app.vue",
     "./src/**/*.{js,vue,ts}",
+    "./node_modules/@deegital/vue-trustup-io-toasteo/dist/index.cjs",
   ],
   theme: {
     extend: {},

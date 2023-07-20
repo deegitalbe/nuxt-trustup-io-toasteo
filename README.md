@@ -8,12 +8,13 @@
 Our notification package for nuxt.
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
-<!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/@deegital/nuxt-trustup-io-toasteo?file=playground%2Fapp.vue) -->
-<!-- - [📖 &nbsp;Documentation](https://example.com) -->
+  <!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/@deegital/nuxt-trustup-io-toasteo?file=playground%2Fapp.vue) -->
+  <!-- - [📖 &nbsp;Documentation](https://example.com) -->
 
 ## Features
 
 <!-- Highlight some of the features your module provide here -->
+
 - ⛰ &nbsp;Foo
 - 🚠 &nbsp;Bar
 - 🌲 &nbsp;Baz
@@ -37,11 +38,20 @@ npm install --save-dev @deegital/nuxt-trustup-io-toasteo
 
 ```js
 export default defineNuxtConfig({
-  modules: [
-    '@deegital/nuxt-trustup-io-toasteo'
+  modules: ["@deegital/nuxt-trustup-io-toasteo"],
+  trustupIoToasteo: {},
+});
+```
+
+3. Add `./node_modules/@deegital/vue-trustup-io-toasteo/dist/index.cjs` in your tailwind config
+
+```js
+export default {
+  content: [
+    ... ,
+    "./node_modules/@deegital/vue-trustup-io-toasteo/dist/index.cjs",
   ],
-  trustupIoToasteo: {}
-})
+   ...
 ```
 
 That's it! You can now use nuxt-trustup-io-toasteo in your Nuxt app ✨
@@ -49,7 +59,9 @@ That's it! You can now use nuxt-trustup-io-toasteo in your Nuxt app ✨
 ## Development
 
 ### Bootstrap module
+
 Find and replace all on all files (CMD+SHIFT+F):
+
 ```shell
   - nuxt-trustup-io-toasteo // nuxt-trustup-io-toasteo
   - Our notification package for nuxt. // Our notification package for nuxt.
@@ -57,12 +69,15 @@ Find and replace all on all files (CMD+SHIFT+F):
   - @deegital // @deegital
   - git@github.com:deegitalbe/nuxt-trustup-io-toasteo.git // git@github.com:deegitalbe/nuxt-trustup-io-toasteo.git
 ```
+
 Start bootstrap script
+
 ```shell
 ./cli bootstrap
 ```
 
 ### Available commands
+
 ```bash
 # Install dependencies
 ./cli yarn install
@@ -100,17 +115,16 @@ npm version patch
 ```
 
 ### References
+
 Nuxt module development [reference](https://nuxt.com/docs/guide/going-further/modules)
 
 <!-- Badges -->
+
 [npm-version-src]: https://img.shields.io/npm/v/@deegital/nuxt-trustup-io-toasteo/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
 [npm-version-href]: https://npmjs.com/package/@deegital/nuxt-trustup-io-toasteo
-
 [npm-downloads-src]: https://img.shields.io/npm/dm/@deegital/nuxt-trustup-io-toasteo.svg?style=flat&colorA=18181B&colorB=28CF8D
 [npm-downloads-href]: https://npmjs.com/package/@deegital/nuxt-trustup-io-toasteo
-
 [license-src]: https://img.shields.io/npm/l/@deegital/nuxt-trustup-io-toasteo.svg?style=flat&colorA=18181B&colorB=28CF8D
 [license-href]: https://npmjs.com/package/@deegital/nuxt-trustup-io-toasteo
-
 [nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
 [nuxt-href]: https://nuxt.com

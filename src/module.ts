@@ -14,7 +14,7 @@ export default defineNuxtModule<ModuleOptions>({
     configKey: "trustupIoToasteo",
   },
   defaults: {},
-  setup(_options, nuxt) {
+  setup(_options, _nuxt) {
     // const resolver = createResolver(import.meta.url);
 
     addComponent({
@@ -27,7 +27,5 @@ export default defineNuxtModule<ModuleOptions>({
       name: "useToasteo",
       from: "@deegital/vue-trustup-io-toasteo",
     });
-
-    nuxt.options.css.unshift("@deegital/vue-trustup-io-toasteo/dist/style.css");
   },
 });
